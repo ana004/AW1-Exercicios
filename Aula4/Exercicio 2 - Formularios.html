@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercício 2 - Formulário completo</title>
+</head>
+<body>
+    <form>
+        <p><b>Identificação</b></p>
+        <p><label for="id_nome">Nome: </label>
+        <input type="text" name="nome" id="id_nome" required /></p>
+        <p><label for="id_senha">Senha: </label>
+        <input type="password" name="senha" id="id_senha" size="15" maxlength="8" required /></p>
+        <p><label for="id_cpf">CPF: </label>
+        <input type="text" name="cpf" id="id_cpf" maxlength="15" pattern="\d{3}\.\d{3}\.\d{3}-\d{2}" placeholder="000.000.000-00" required /></p>
+        <p><label for="id_sexo">Sexo: </label>
+        <select name="sexo" id="id_sexo" required>
+            <option value="Mas">Masculino</option>
+            <option value="Fem">Feminino</option>
+        </select></p>
+        <p><label for="id_data">Data de nascimento:</label>
+        <input type="datetime-local" name="datetime" id="id_data" required /></p>
+        <p><label for="id_estadocivil">Estado civil:</label>
+        <input type="text" name="estadocivil" id="id_estadocivil" required /></p>
+        <p><label for="id_escolaridade">Escolaridade:</label>
+        <input type="text" name="escolaridade" id="id_escolaridade" size="20" maxlength="30" /></p>
+        <p><label for="id_ocupacao">Ocupação principal:</label>
+        <input type="text" name="ocupacao" id="id_ocupacao" size="10" maxlength="20" /></p>
+        <p><label for="id_rendamensal">Renda mensal:</label>
+        <input type="text" name="rendamensal" id="id_rendamensal" placeholder="Insira somente dígitos" /></p>
+        <p><label for="id_dependentes">Número de dependentes:</label>
+        <input type="number" name="numerodependentes" id="id_dependentes" /></p>
+        <p><label for="id_tel">Telefone:</label>
+        <input type="tel" name="tel" id="id_tel" pattern="\([0-9]{2}\)[0-9]{4,6}-[0-9]{3,4}$" required /></p>
+        <p><label for="id_email">Email:</label>
+        <input type="email" name="email" id="id_email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$" required /></p>
+        <p><b>Localização</b></p>
+        <p><label for="id_estado">Estado</label>
+        <input type="text" name="estado" id="id_estado" size="15" maxlength="10" required /></p>
+        <p><label for="id_cidade">Cidade</label>
+        <input type="text" name="cidade" id="id_cidade" size="15" maxlength="10" required /></p>
+        <p><b>Mensagem do Usuário</b></p>
+        <p><label for="id_grauurgencia">Grau de Urgência</label>
+        <input type="text" name="grauurgencia" id="id_grauurgencia" size="5" maxlength="10" /></p>
+        <p><label for="id_mensagem">Mensagem</label>
+        <textarea name="mensagem" id="id_mensagem" maxlength="50"></textarea></p>
+        <p><label for="id_erro">Reportar erro</label>
+        <textarea name="reportarerro" id="id_erro" maxlength="30"></textarea></p>
+        <input type="file" name="arquivo" />
+        <br><br><br>
+        <input type="submit" value="Enviar" />
+        <input type="reset" value="Limpar" />
+    </form>
+</body>
+</html>
